@@ -1,0 +1,32 @@
+server:
+  port: 2333
+  address: 0.0.0.0
+lavalink:
+  server:
+    password: "youshallnotpass"
+    sources:
+      youtube: true
+      bandcamp: true
+      soundcloud: true
+      twitch: true
+      vimeo: true
+      http: true
+      local: false
+    filters:
+      volume: true
+plugins:
+  lavasrc:
+    providers:
+      - youtube
+      - soundcloud
+    spotify:
+      clientId: ${SPOTIFY_CLIENT_ID}
+      clientSecret: ${SPOTIFY_CLIENT_SECRET}
+      countryCode: DE
+    deezer:
+      masterDecryptionKey: null
+    tidal:
+      sessionId: null
+logging:
+  level:
+    root: INFO
